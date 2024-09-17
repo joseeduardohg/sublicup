@@ -1,0 +1,17 @@
+{
+  "version": "0.2",
+  "language": "en,es",
+  "caseSensitive": false,
+  "allowCompoundWords": true,
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    ".github",
+    ".vscode",
+    ".vercelignore",
+    ".nvmrc",
+    "pnpm-lock.yaml",
+    "tsconfig.json"
+  ],
+  "words": ["cspell", "json", "en", "es"]
+}
