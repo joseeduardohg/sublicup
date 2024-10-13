@@ -1,12 +1,27 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* primitives */
+  --metalic_seaweed: #21889f;
+  --white: #ffffff;
+  --gray88: #e0e0e0;
+  --gray94: #efefef;
+  --black: #000000;
+  --seasalt: #fafafa;
+
+  /* semantic colors */
+  --primary: var(--metalic_seaweed);
+  --on-primary: var(--white);
+  --background: var(--seasalt);
+  --on-background: var(--black);
+  --surface: var(--white);
+  --on-surface: var(--black);
+  --outline: var(--gray88);
+  --outline-variant: var(--gray94);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --on-background: #ededed;
   }
 }
 
@@ -17,7 +32,7 @@ body {
 }
 
 body {
-  color: var(--foreground);
+  color: var(--on-background);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
