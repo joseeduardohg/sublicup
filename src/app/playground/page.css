@@ -6,3 +6,7 @@
   height: 100vh;
   gap: 32px;
 }
+
+.input-wrapper {
+  width: 400px;
+}
