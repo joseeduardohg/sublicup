@@ -13,5 +13,5 @@
     "pnpm-lock.yaml",
     "tsconfig.json"
   ],
-  "words": ["cspell", "json", "en", "es"]
+  "words": ["cspell", "json", "en", "es", "lucide"]
 }
