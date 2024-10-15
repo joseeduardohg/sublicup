@@ -1,0 +1,16 @@
+.link {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  padding: 1rem;
+}
+
+.link:hover::after,
+.link--active::after {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  border: 1px solid var(--primary);
+}
