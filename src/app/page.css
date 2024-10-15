@@ -1,63 +1,58 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h2{
-    font-family: sans-serif;
-    font-size: 2.5rem;
-}
-
-.seccion-principal{
-    display: flex;
-    margin-top: 2rem;
-    padding: 5rem;
+h2 {
+  font-family: sans-serif;
+  font-size: 2.5rem;
 }
 
-.SP-textos{
-    margin: auto;
-    padding: 1rem;
+.seccion-principal {
+  display: flex;
+  margin-top: 2rem;
+  padding: 5rem;
 }
 
-.SP-textos h2{
-    font-family: sans-serif;
-    font-size: 2.5rem;
+.SP-textos {
+  margin: auto;
+  padding: 1rem;
 }
 
-.seccion-principal section img{
-    height: 25rem;
+.SP-textos h2 {
+  font-family: sans-serif;
+  font-size: 2.5rem;
 }
 
-.testimonios h2{
-    justify-content: center;
-    text-align: center;
-    margin: 2rem;
+.seccion-principal section img {
+  height: 25rem;
 }
 
-.tesminonios-seccion{
-    text-align: center;
-    display: flex;
-    gap: 5rem;
-    justify-content: center;
+.testimonios h2 {
+  justify-content: center;
+  text-align: center;
+  margin: 2rem;
 }
 
-.testimonios-perfiles p{
-        width: 200px;
-
+.testimonios-seccion {
+  text-align: center;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
 }
 
-.testimonios-perfiles img{
-    height: 6rem;
-    width: 6rem;
-    border-radius: 100%;
-    object-fit: cover;
-
+.testimonios-perfiles p {
+  width: 200px;
 }
 
-.mapa{
-    width: 100%;
-    margin-top: 5rem;
+.testimonios-perfiles img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
-
-
+.mapa {
+  width: 100%;
+  margin-top: 5rem;
+}
