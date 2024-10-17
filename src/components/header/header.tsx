@@ -5,15 +5,15 @@ import avatar from '@/images/avatar.jpg';
 import logo from '@/images/logo.png';
 import { CircleUser, Contact, House, Shapes } from 'lucide-react';
 import Image from 'next/image';
-import './header.css';
+import styles from './header.module.css';
 
 export default function Header() {
   return (
-    <header className='header'>
+    <header className={styles.header}>
       <Image src={logo} alt='logo' width={40} height={40} />
 
-      <section className='header__navbar'>
-        <nav className='header__nav'>
+      <section className={styles.navbar}>
+        <nav className={styles.nav}>
           <CustomLink href='/' icon={House}>
             Inicio
           </CustomLink>
@@ -28,7 +28,7 @@ export default function Header() {
           </CustomLink>
         </nav>
 
-        <section className='header__options'>
+        <section className={styles.options}>
           <Image src={avatar} alt='logo' width={40} height={40} />
         </section>
       </section>

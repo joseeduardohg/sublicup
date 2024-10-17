@@ -1,12 +1,14 @@
 .link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 0.5rem;
   position: relative;
   padding: 1rem;
 }
 
 .link:hover::after,
-.link--active::after {
+.active::after {
   content: '';
   position: absolute;
   left: 0.5rem;

@@ -3,22 +3,23 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 4.5rem;
+  width: 100vw;
   background-color: var(--surface);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.header__navbar {
+.navbar {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
-.header__nav,
-.header__options {
+.nav,
+.options {
   display: flex;
   gap: 0.5rem;
 }
 
-.header__options > img {
+.options > img {
   border-radius: 50%;
 }

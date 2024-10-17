@@ -4,7 +4,7 @@ import { LucideIcon } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { PropsWithChildren } from 'react';
-import './custom-link.css';
+import styles from './custom-link.module.css';
 
 type CustomLinkProps = PropsWithChildren & {
   href?: string;
@@ -21,7 +21,7 @@ export default function CustomLink({
   return (
     <Link
       href={href ? href : '#'}
-      className={`link ${pathname === href ? 'link--active' : ''}`.trim()}
+      className={`${styles.link} ${pathname === href ? styles.active : ''}`.trim()}
     >
       {Icon && <Icon />}
       {children}

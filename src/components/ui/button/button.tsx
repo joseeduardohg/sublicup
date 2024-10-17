@@ -2,7 +2,7 @@
 
 import type { LucideIcon } from 'lucide-react';
 import { PropsWithChildren } from 'react';
-import './button.css';
+import styles from './button.module.css';
 
 type ButtonProps = PropsWithChildren & {
   icon?: LucideIcon;
@@ -11,7 +11,7 @@ type ButtonProps = PropsWithChildren & {
 
 export default function Button({ icon: Icon, children, onClick }: ButtonProps) {
   return (
-    <button className='button' onClick={onClick}>
+    <button className={styles.button} onClick={onClick}>
       {children}
       {Icon && <Icon />}
     </button>

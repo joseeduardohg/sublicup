@@ -1,5 +1,5 @@
 import React from 'react';
-import './input.css';
+import styles from './input.module.css';
 
 type InputProps = React.InputHTMLAttributes<HTMLInputElement>;
 
@@ -8,7 +8,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     return (
       <input
         type={type}
-        className={`${className} input`}
+        className={`${styles.input} ${className}`}
         ref={ref}
         {...props}
       />

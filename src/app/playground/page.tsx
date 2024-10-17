@@ -1,21 +1,25 @@
 'use client';
 
-import { Button, Input } from '@/components/ui';
+import { Button, CustomLink, Input } from '@/components/ui';
 import { Circle } from 'lucide-react';
-import './page.css';
+import styles from './page.module.css';
 
 export default function Playground() {
   return (
-    <div className='container'>
+    <div className={styles.container}>
       <h1>Playground</h1>
 
       <Button icon={Circle} onClick={() => alert('Hello!')}>
         Click me
       </Button>
 
-      <div className='input-wrapper'>
+      <div className={styles.wrapper}>
         <Input placeholder='Enter your name...' />
       </div>
+
+      <CustomLink href='#' icon={Circle}>
+        Foo
+      </CustomLink>
     </div>
   );
 }
