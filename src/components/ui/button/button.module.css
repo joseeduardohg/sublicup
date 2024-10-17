@@ -3,13 +3,11 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  padding: 1rem;
   border: none;
   border-radius: 2rem;
-  color: var(--on-primary);
-  background-color: var(--primary);
+  /* color: var(--on-primary);
+  background-color: var(--primary); */
   font-family: var(--font-fredoka);
-  font-size: 1.5rem;
   text-align: center;
   text-decoration: none;
   transition: all 0.2s;
@@ -19,4 +17,29 @@
 .button:hover {
   /* background-color: var(--primary-dark); */
   scale: 1.1;
+}
+
+.primary {
+  color: var(--on-primary);
+  background-color: var(--primary);
+}
+
+.secondary {
+  color: var(--on-secondary);
+  background-color: var(--secondary);
+}
+
+.small {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.medium {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.large {
+  font-size: 1.5rem;
+  padding: 1rem;
 }
