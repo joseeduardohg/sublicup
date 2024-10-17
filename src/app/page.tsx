@@ -1,4 +1,7 @@
+import tazaLogo from '@/images/taza-logo.jpeg';
+import Testimonio2 from '@/images/Testimonio2.jpg';
 import Image from 'next/image';
+
 import './page.css';
 
 export default function Home() {
@@ -16,12 +19,7 @@ export default function Home() {
         </section>
 
         <section>
-          <Image
-            width={400}
-            height={400}
-            src='/src/images/taza-logo.jpeg'
-            alt=''
-          />
+          <Image width={500} height={300} src={tazaLogo} alt='' />
         </section>
       </section>
 
@@ -29,14 +27,10 @@ export default function Home() {
 
       <section className='testimonios'>
         <h2>Testimonios</h2>
+
         <section className='testimonios-seccion'>
           <section className='testimonios-perfiles'>
-            <Image
-              width={400}
-              height={400}
-              src='/src/images/Testimonio2.jpg'
-              alt=''
-            />
+            <Image width={400} height={400} src={Testimonio2} alt='' />
             <p>NOMBRE</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
@@ -45,12 +39,7 @@ export default function Home() {
           </section>
 
           <section className='testimonios-perfiles'>
-            <Image
-              width={400}
-              height={400}
-              src='/src/images/Testimonio2.jpg'
-              alt=''
-            />
+            <Image width={400} height={400} src={Testimonio2} alt='' />
             <p>NOMBRE</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
@@ -59,12 +48,7 @@ export default function Home() {
           </section>
 
           <section className='testimonios-perfiles'>
-            <Image
-              width={400}
-              height={400}
-              src='/src/images/Testimonio2.jpg'
-              alt=''
-            />
+            <Image width={400} height={400} src={Testimonio2} alt='' />
             <p>NOMBRE</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
@@ -73,12 +57,7 @@ export default function Home() {
           </section>
 
           <section className='testimonios-perfiles'>
-            <Image
-              width={400}
-              height={400}
-              src='/src/images/Testimonio2.jpg'
-              alt=''
-            />
+            <Image width={400} height={400} src={Testimonio2} alt='' />
             <p>NOMBRE</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,

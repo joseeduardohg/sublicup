@@ -18,6 +18,9 @@ h2 {
   margin: auto;
   padding: 1rem;
 }
+.SP-textos p {
+  width: 500px;
+}
 
 .SP-textos h2 {
   font-family: sans-serif;
