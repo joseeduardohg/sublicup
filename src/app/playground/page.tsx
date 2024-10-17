@@ -1,5 +1,6 @@
 'use client';
 
+import { ProductCard } from '@/components';
 import { Button, CustomLink, Input } from '@/components/ui';
 import { Circle } from 'lucide-react';
 import styles from './page.module.css';
@@ -20,6 +21,8 @@ export default function Playground() {
       <CustomLink href='#' icon={Circle}>
         Foo
       </CustomLink>
+
+      <ProductCard name='Selena Gómez' price={100.0} image='' />
     </div>
   );
 }
