@@ -2,13 +2,18 @@ import { Button } from '@/components/ui';
 import Image from 'next/image';
 import styles from './product-card.module.css';
 
-type ProductCardProps = {
+export type Product = {
+  id: string;
+  category: string;
   name: string;
   price: number;
-  image: string;
 };
 
-export default function ProductCard({ name, price }: ProductCardProps) {
+type ProductCardProps = {
+  product: Product;
+};
+
+export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className={styles.container}>
       <Image
@@ -20,8 +25,8 @@ export default function ProductCard({ name, price }: ProductCardProps) {
       />
 
       <div className={styles.info}>
-        <h3 className={styles.name}>{name}</h3>
-        <p className={styles.price}>${price.toFixed(2)}</p>
+        <h3 className={styles.name}>{product.name}</h3>
+        <p className={styles.price}>${product.price.toFixed(2)}</p>
 
         <Button size='small'>Añadir al carrito</Button>
       </div>
