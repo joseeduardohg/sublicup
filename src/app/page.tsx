@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <section className='seccion-principal'>
         <section className='SP-textos'>
-          <h2>Si puedes imaginarlo podemos sublimarlo</h2>
+          <h2>Si puedes imaginarlo, podemos sublimarlo</h2>
           <br />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab aliquam
