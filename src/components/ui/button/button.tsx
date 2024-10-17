@@ -6,12 +6,18 @@ import styles from './button.module.css';
 
 type ButtonProps = PropsWithChildren & {
   icon?: LucideIcon;
+  className?: string;
   onClick?: () => void;
 };
 
-export default function Button({ icon: Icon, children, onClick }: ButtonProps) {
+export default function Button({
+  icon: Icon,
+  className,
+  children,
+  onClick,
+}: ButtonProps) {
   return (
-    <button className={styles.button} onClick={onClick}>
+    <button className={`${styles.button} ${className}`} onClick={onClick}>
       {children}
       {Icon && <Icon />}
     </button>
