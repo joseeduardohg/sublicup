@@ -43,6 +43,24 @@ const products = [
     price: 75,
   },
   {
+    id: '7',
+    category: 'cups',
+    name: 'Taza 3',
+    price: 75,
+  },
+  {
+    id: '8',
+    category: 'cups',
+    name: 'Taza 4',
+    price: 75,
+  },
+  {
+    id: '9',
+    category: 'cups',
+    name: 'Taza 5',
+    price: 75,
+  },
+  {
     id: '5',
     category: 'thermos',
     name: 'Termo 1',
