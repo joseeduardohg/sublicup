@@ -1,4 +1,5 @@
 import { ProductCard } from '@/components';
+import { Input } from '@/components/ui';
 import styles from './page.module.css';
 
 const categories = [
@@ -80,7 +81,7 @@ export default function ProductsPage({
     <div className={styles.page}>
       <p>Breadcrumb</p>
 
-      <p>Search Bar</p>
+      <Input placeholder='Search' />
 
       <div className={styles.grid}>
         <h1>{label}</h1>
