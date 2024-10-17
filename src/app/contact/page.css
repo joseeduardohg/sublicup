@@ -1,0 +1,125 @@
+.Titulo_contacto {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  color: black;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.izquierda {
+  width: 40%;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.derecha {
+  width: 60%;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+button[type='submit'] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.redes-sociales {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.redes-sociales ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.redes-sociales li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.redes-sociales a {
+  font-size: 24px;
+  color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.welcome {
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
