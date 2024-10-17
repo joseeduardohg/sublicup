@@ -20,7 +20,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         className={styles.image}
         width={280}
         height={280}
-        src='https://via.assets.so/album.png?id=11&q=95&fit=fill'
+        src='https://placehold.co/280.png'
         alt='Product'
       />
 

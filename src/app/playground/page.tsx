@@ -22,7 +22,9 @@ export default function Playground() {
         Foo
       </CustomLink>
 
-      <ProductCard name='Selena Gómez' price={100.0} image='' />
+      <ProductCard
+        product={{ id: '1', name: 'Cup', price: 100, category: 'cups' }}
+      />
     </div>
   );
 }
