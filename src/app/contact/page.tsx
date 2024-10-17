@@ -29,9 +29,6 @@ export default function ContactPage() {
             <label>Mensaje:</label>
             <textarea name='mensaje' required></textarea>
             <br />
-            <label>Opiniones</label>
-            <textarea name='Opinion' required></textarea>
-            <br />
             <button type='submit'>Enviar</button>
           </form>
         </div>
