@@ -73,20 +73,6 @@ button[type='submit'] {
   color: #333;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-header {
-  background: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-align: center;
-}
-
 .welcome {
   padding: 20px;
   text-align: center;
@@ -112,14 +98,4 @@ img {
   margin: 10px;
   width: 200px;
   text-align: center;
-}
-
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
 }
