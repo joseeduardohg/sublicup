@@ -3,7 +3,6 @@ import descarga from '@/images/descarga.jpg';
 import Image from 'next/image';
 import './page.css';
 import { Button } from '@/components/ui';
-import { Minus, Plus } from 'lucide-react';
 
 export default function ProductsPage() {
   return (
