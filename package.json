@@ -5,8 +5,8 @@
   "packageManager": "pnpm@9.12.2",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "pnpm run prisma:push",
     "build": "next build",
-    "prebuild": "pnpm run prisma-generate",
     "start": "next start",
     "lint": "next lint",
     "prisma:push": "dotenv -e .env.local -- pnpm exec prisma db push",
