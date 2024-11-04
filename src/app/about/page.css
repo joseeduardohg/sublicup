@@ -1,13 +1,16 @@
-section {
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   width: 750px;
   margin-block: 20px;
   margin-inline: auto;
-  padding: 20px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-h1,
-h2 {
-  color: #4caf50;
+
+.imagenes {
+  display: flex;
+  justify-content: space-between;
 }
