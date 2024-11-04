@@ -27,8 +27,10 @@ h2 {
   font-size: 2.5rem;
 }
 
-.seccion-principal section img {
-  height: 25rem;
+.hero-img {
+  position: relative;
+  width: 450px;
+  height: 400px;
 }
 
 .testimonios h2 {

@@ -18,9 +18,11 @@ export default function Home() {
           </p>
         </section>
 
-        <section>
-          <Image width={500} height={300} src={tazaLogo} alt='' />
+        <section className='hero-img'>
+          <Image src={tazaLogo} alt='' fill={true} objectFit='cover' />
         </section>
+        {/* <section>
+        </section> */}
       </section>
 
       <section className='galeria'></section>
