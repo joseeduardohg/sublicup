@@ -1,8 +1,12 @@
+import Image from 'next/image';
 import './page.css';
+import taza1 from '@/images/taza1.jpeg';
+import taza2 from '@/images/taza2.jpeg';
 export default function AboutPage() {
   return (
-    <section>
+    <section className='section'>
       <h2>Sobre Nosotros</h2>
+
       <p>
         En Sublicup, nos especializamos en la personalización de tazas, playeras
         y termos, ofreciendo un servicio a domicilio para que puedas llevar tu
@@ -21,6 +25,22 @@ export default function AboutPage() {
       <p>
         ¡Descubre nuestra variedad de productos y personaliza el tuyo hoy mismo!
       </p>
+      <section className='imagenes'>
+        <Image
+          src={taza1}
+          alt='taza1.jpg'
+          width={300}
+          height={300}
+          className='about-image'
+        />
+        <Image
+          src={taza2}
+          alt='taza2.jpg'
+          width={300}
+          height={300}
+          className='about-image'
+        />
+      </section>
     </section>
   );
 }
