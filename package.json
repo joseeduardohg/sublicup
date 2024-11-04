@@ -5,13 +5,15 @@
   "packageManager": "pnpm@9.12.2",
   "scripts": {
     "dev": "next dev",
-    "prebuild": "pnpm run prisma:migrate",
+    "prebuild": "pnpm run migrate",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "migrate": "pnpm exec prisma migrate dev",
     "prisma:push": "dotenv -e .env.local -- pnpm exec prisma db push",
     "prisma:generate": "dotenv -e .env.local -- pnpm exec prisma generate",
-    "prisma:migrate": "dotenv -e .env.local -- pnpm exec prisma migrate dev --name init",
+    "prisma:init": "dotenv -e .env.local -- pnpm exec prisma migrate dev --name init",
+    "prisma:migrate": "dotenv -e .env.local -- pnpm exec prisma migrate dev",
     "prisma:studio": "dotenv -e .env.local -- pnpm exec prisma studio"
   },
   "dependencies": {
