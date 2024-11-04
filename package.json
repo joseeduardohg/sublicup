@@ -5,7 +5,7 @@
   "packageManager": "pnpm@9.12.2",
   "scripts": {
     "dev": "next dev",
-    "prebuild": "pnpm run prisma:push",
+    "prebuild": "pnpm run prisma:migrate",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
