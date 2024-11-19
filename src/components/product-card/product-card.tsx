@@ -1,13 +1,7 @@
-import { Button } from '@/components/ui';
+import { Product } from '@prisma/client';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './product-card.module.css';
-
-export type Product = {
-  id: string;
-  category: string;
-  name: string;
-  price: number;
-};
 
 type ProductCardProps = {
   product: Product;
@@ -15,21 +9,24 @@ type ProductCardProps = {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <div className={styles.container}>
-      <Image
-        className={styles.image}
-        width={280}
-        height={280}
-        src='https://placehold.co/280.png'
-        alt='Product'
-      />
-
-      <div className={styles.info}>
-        <h3 className={styles.name}>{product.name}</h3>
-        <p className={styles.price}>${product.price.toFixed(2)}</p>
-
-        <Button size='small'>Añadir al carrito</Button>
-      </div>
+    <div className={styles.card}>
+      <Link href={`/products/${product.slug}`}>
+        <div className={styles.header}>
+          <Image
+            width={280}
+            height={280}
+            src='https://placehold.co/280.png'
+            alt='Product'
+          />
+        </div>
+        <div className={styles.body}>
+          <h3 className={styles.title}>{product.name}</h3>
+          <p className={styles.description}>{product.description}</p>
+        </div>
+        <div className={styles.footer}>
+          <p className={styles.price}>${product.price.toFixed(2)}</p>
+        </div>
+      </Link>
     </div>
   );
 }

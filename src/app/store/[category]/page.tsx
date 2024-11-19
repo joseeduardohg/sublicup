@@ -1,84 +1,14 @@
 import { ProductCard } from '@/components';
-import { Input } from '@/components/ui';
+import prisma from '@/lib/db';
 import styles from './page.module.css';
-
-const categories = [
-  {
-    category: 't-shirts',
-    label: 'Playeras',
-  },
-  {
-    category: 'cups',
-    label: 'Tazas',
-  },
-  {
-    category: 'thermos',
-    label: 'Termos',
-  },
-];
-
-const products = [
-  {
-    id: '1',
-    category: 't-shirts',
-    name: 'Playera 1',
-    price: 100,
-  },
-  {
-    id: '2',
-    category: 't-shirts',
-    name: 'Playera 2',
-    price: 150,
-  },
-  {
-    id: '3',
-    category: 'cups',
-    name: 'Taza 1',
-    price: 50,
-  },
-  {
-    id: '4',
-    category: 'cups',
-    name: 'Taza 2',
-    price: 75,
-  },
-  {
-    id: '7',
-    category: 'cups',
-    name: 'Taza 3',
-    price: 75,
-  },
-  {
-    id: '8',
-    category: 'cups',
-    name: 'Taza 4',
-    price: 75,
-  },
-  {
-    id: '9',
-    category: 'cups',
-    name: 'Taza 5',
-    price: 75,
-  },
-  {
-    id: '5',
-    category: 'thermos',
-    name: 'Termo 1',
-    price: 200,
-  },
-  {
-    id: '6',
-    category: 'thermos',
-    name: 'Termo 2',
-    price: 250,
-  },
-];
 
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  return categories.map(({ category }) => ({
-    category,
+  const categories = await prisma.category.findMany();
+
+  return categories.map(({ slug }) => ({
+    category: slug,
   }));
 }
 
@@ -87,26 +17,29 @@ type ProductsPageParams = {
 };
 
 type ProductsPageProps = {
-  params: ProductsPageParams;
+  params: Promise<ProductsPageParams>;
 };
 
-export default function ProductsPage({
-  params: { category },
-}: ProductsPageProps) {
-  const label = categories.find((c) => c.category === category)?.label;
+export default async function ProductsPage({ params }: ProductsPageProps) {
+  const slug = (await params).category;
+  const category = await prisma.category.findUnique({ where: { slug } });
+  const products = await prisma.product.findMany({
+    include: { category: true },
+    where: { category: { slug } },
+  });
 
   return (
     <div className={styles.page}>
-      <p>Breadcrumb</p>
+      {/* <p>Breadcrumb</p> */}
 
-      <Input placeholder='Search' />
+      {/* <Input placeholder='Search' /> */}
 
-      <div className={styles.grid}>
-        <h1>{label}</h1>
+      <div className={styles.container}>
+        <h1>{category?.name}</h1>
 
-        <ul>
+        <ul className={styles.grid}>
           {products
-            .filter((product) => product.category === category)
+            .filter((product) => product.category.id === category?.id)
             .map((product) => (
               <li key={product.id}>
                 <ProductCard product={product} />
