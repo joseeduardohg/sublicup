@@ -29,7 +29,7 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
   });
 
   return (
-    <div className={styles.page}>
+    <main className={styles.page}>
       {/* <p>Breadcrumb</p> */}
 
       {/* <Input placeholder='Search' /> */}
@@ -47,6 +47,6 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
             ))}
         </ul>
       </div>
-    </div>
+    </main>
   );
 }

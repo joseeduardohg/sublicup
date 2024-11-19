@@ -1,10 +1,11 @@
-import Image from 'next/image';
-import './page.css';
 import taza1 from '@/images/taza1.jpeg';
 import taza2 from '@/images/taza2.jpeg';
+import Image from 'next/image';
+import './page.css';
+
 export default function AboutPage() {
   return (
-    <section className='section'>
+    <main className='section'>
       <h2>Sobre Nosotros</h2>
 
       <p>
@@ -41,6 +42,6 @@ export default function AboutPage() {
           className='about-image'
         />
       </section>
-    </section>
+    </main>
   );
 }
