@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "prisma generate && prisma migrate deploy",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "prisma generate && prisma migrate deploy",
     "prisma:push": "dotenv -e .env.local -- prisma db push",
     "prisma:dev": "dotenv -e .env.local -- prisma migrate dev",
     "prisma:generate": "dotenv -e .env.local -- prisma generate",
