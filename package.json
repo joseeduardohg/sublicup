@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "prebuild": "pnpm run prisma-generate",
     "start": "next start",
     "lint": "next lint",
-    "prisma-generate": "dotenv -e .env.local -- pnpm exec prisma generate",
-    "prisma-dev": "dotenv -e .env.local -- pnpm exec prisma migrate dev --name init"
+    "postinstall": "prisma generate && prisma migrate deploy",
+    "prisma:push": "dotenv -e .env.local -- prisma db push",
+    "prisma:dev": "dotenv -e .env.local -- prisma migrate dev",
+    "prisma:generate": "dotenv -e .env.local -- prisma generate",
+    "prisma:studio": "dotenv -e .env.local -- prisma studio"
   },
   "dependencies": {
     "@prisma/client": "5.21.1",

@@ -1,0 +1,16 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 750px;
+  margin-block: 20px;
+  margin-inline: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.imagenes {
+  display: flex;
+  justify-content: space-between;
+}
