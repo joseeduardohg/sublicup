@@ -1,8 +1,9 @@
 'use client';
+
+import { Button } from '@/components/ui';
 import descarga from '@/images/descarga.jpg';
 import Image from 'next/image';
 import './page.css';
-import { Button } from '@/components/ui';
 
 export default function ProductsPage() {
   return (
