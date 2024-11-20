@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trigger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.trigger:hover::after,
+.active::after {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  border: 1px solid var(--primary);
+}
+
+.content {
+  position: absolute;
+  top: 56px;
+  color: var(--on-surface);
+  background-color: var(--surface);
+  box-shadow:
+    0 4px 3px 0 rgba(0, 0, 0, 0.2),
+    0 2px 3px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.content a {
+  display: block;
+  padding: 1rem;
+}
+
+.content a:hover {
+  background-color: rgba(33, 136, 159, 0.1);
+}

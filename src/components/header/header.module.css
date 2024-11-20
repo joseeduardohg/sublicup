@@ -23,3 +23,18 @@
 .options > img {
   border-radius: 50%;
 }
+
+.menuTrigger {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  bottom: -56px;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--outline);
+  font-size: 1rem;
+  font-family: var(--font-fredoka);
+  border-radius: 0.5rem;
+}
